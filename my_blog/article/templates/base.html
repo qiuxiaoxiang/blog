@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Bootstrap css -->
+<link type="text/css" rel='stylesheet' href="/static/css/bootstrap.min.css">
+
+<!-- End Bootstrap css -->
+
+
+<!-- Fancybox -->
+<link type="text/css" rel='stylesheet' href="/static/js/fancybox/jquery.fancybox.css">
+<!-- End Fancybox -->
+
+<link type="text/css" rel='stylesheet' href="/static/fonts/fonts.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<link type="text/css" data-themecolor="default" rel='stylesheet' href="/static/css/main-default.css">
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="mask-l" style="background-color: #fff; width: 100%; height: 100%; position: fixed; top: 0; left:0; z-index: 9999999;"></div> <!--removed by integration-->
+<header>
+  <div class="container b-header__box b-relative">
+	
+    <div class="b-header-r b-right b-header-r--icon">
+     
+      <div class="b-top-nav-show-slide f-top-nav-show-slide b-right j-top-nav-show-slide"><i class="fa fa-align-justify"></i></div>
+      <nav class="b-top-nav f-top-nav b-right j-top-nav">
+          <ul class="b-top-nav__1level_wrap">
+    <li class="b-top-nav__1level f-top-nav__1level is-active-top-nav__1level f-primary-b"><a href="#"><i class="fa fa-home b-menu-1level-ico"></i>Home <span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+    
+    </li>
+    
+    <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+        <a href="#"><i class="fa fa-picture-o b-menu-1level-ico"></i>作品集 <span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+        
+    </li>
+    <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+        <a href="#"><i class="fa fa-code b-menu-1level-ico"></i>博客 <span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+        
+    </li>
+    <li class="b-top-nav__1level f-top-nav__1level f-primary-b b-top-nav-big">
+        <a href="https://www.qiuxiaoxiang.top/"><i class="fa fa-cloud-download b-menu-1level-ico"></i>网页<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+     
+    </li>
+   
+    <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+        <a href="964425898"><i class="fa fa-folder-open b-menu-1level-ico"></i>联系我们<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+    </li>
+    
+</ul>
+
+      </nav>
+    </div>
+  </div>
+  
+<div class="headLogin">
+            <div class="my" style="height: 30px;">
+                <span><a href="/login/" id="Header_PS1_a_loginNot">登录</a>
+                    <img src="/image/head2016/dot.gif" id="Header_PS1_imgDot1">
+                    <a href="/regist" id="Header_PS1_a_reg">注册</a> </span>
+                <div class="mylist" id="div_Login" style="display: none; text-align:center;padding-top:5px;padding-bottom: 8px;">
+                    <i style="padding: 0"></i>
+                    <div>
+                       <a href="">退出</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+</header>
+<div class="j-menu-container"></div>
+
+<div class="b-inner-page-header f-inner-page-header b-bg-header-inner-page">
+  <div class="b-inner-page-header__content">
+    <div class="container">
+      <h1 class="f-primary-l c-default">博客</h1>
+    </div>
+  </div>
+</div>
+<div class="l-main-container">
+
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">博客</a></li>
+                <li><i class="fa fa-angle-right"></i><span></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="l-inner-page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    <div class="b-blog-listing__block">
+                        <div class="b-blog-listing__block-top">
+                            <div class=" view view-sixth">
+    <img data-retina="" src="/static/img/blog/blog_listing.jpg" alt="">
+   
+</div>
+                        </div>
+                        <div class="b-infoblock-with-icon b-blog-listing__infoblock">
+                            <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate hidden-xs">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                            <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-blog-listing__block">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="visible-xs-block visible-sm-block b-hr"></div>
+                <div class="col-md-3 col-md-pull-9">
+                    <div class="row">
+    <div class="col-md-12">
+        <div class="b-form-row b-input-search">
+            <form class="pure-form" action="/search/" method="get">
+            <input class="form-control" type="text" name="s" placeholder="输入关键词">
+            <span class="b-btn b-btn-search f-btn-search fa fa-search fa-2x"></span>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row b-col-default-indent">
+    <div class="col-md-12">
+        <div class="b-categories-filter">
+            <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">博客类别</h4>
+            <ul>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> 网页设计</a>
+        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> 智能手机</a>
+        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Latop</a>
+        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Apple Store</a>
+        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Wordpress主题</a>
+        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Web Design</a>
+        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Sport</a>
+        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+    </li>
+    <li>
+        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> 风格</a>
+        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+    </li>
+</ul>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4 class="f-primary-b b-h4-special  f-h4-special--gray f-h4-special">popular postes</h4>
+
+        <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+            <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+        <div class="b-blog-short-post__item_img">
+            <a href="#"><img data-retina src="/static/img/gallery/sm/gallery_1.jpg" alt=""/></a>
+        </div>
+        <div class="b-remaining">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                <a href="#">Phasellus id mattis dolorunc et erat hendrerit, tincidunt</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                10, January, 2014
+            </div>
+        </div>
+    </div>
+    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+        <div class="b-blog-short-post__item_img">
+            <a href="#"><img data-retina src="/static/img/gallery/sm/gallery_2.jpg" alt=""/></a>
+        </div>
+        <div class="b-remaining">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                <a href="#">Vel eleifend id ullamcorper eu velit</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                14, January, 2014
+            </div>
+        </div>
+    </div>
+    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+        <div class="b-blog-short-post__item_img">
+            <a href="#"><img data-retina src="/static/img/gallery/sm/gallery_2.jpg" alt=""/></a>
+        </div>
+        <div class="b-remaining">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                <a href="#">Lorem ipsum dolor sit amet purus vitae magna rhoncus</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                10, January, 2014
+            </div>
+        </div>
+    </div>
+    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+        <div class="b-blog-short-post__item_img">
+            <a href="#"><img data-retina src="/static/img/gallery/sm/gallery_3.jpg" alt=""/></a>
+        </div>
+        <div class="b-remaining">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                <a href="#">Fusce vitae dui sit amet lacus rutrum convallis</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                10, January, 2014
+            </div>
+        </div>
+    </div>
+    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b @@hidden">
+        <div class="b-blog-short-post__item_img">
+            <a href="#"><img data-retina src="/static/img/gallery/sm/gallery_1.jpg" alt=""/></a>
+        </div>
+        <div class="b-remaining">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                <a href="#">Fusce vitae dui sit amet lacus rutrum convallis</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                10, January, 2014
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">标签 cloud</h4>
+        <div>
+    <a class="f-tag b-tag" href="#">Dress</a>
+    <a class="f-tag b-tag" href="#">Mini</a>
+    <a class="f-tag b-tag" href="#">Skate animal</a>
+    <a class="f-tag b-tag" href="#">Lorem ipsum</a>
+    <a class="f-tag b-tag" href="#">literature</a>
+    <a class="f-tag b-tag" href="#">Baroque</a>
+    <a class="f-tag b-tag" href="#">Dress</a>
+    <a class="f-tag b-tag" href="#">Mini</a>
+    <a class="f-tag b-tag" href="#">Skate animal</a>
+    <a class="f-tag b-tag" href="#">Lorem ipsum</a>
+    <a class="f-tag b-tag" href="#">literature</a>
+    <a class="f-tag b-tag" href="#">Baroque</a>
+</div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script src="/static/js/jquery/jquery-1.11.1.min.js"></script>
+<!-- bootstrap -->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- end bootstrap -->
+
+
+<!-- Modules -->
+<script src="/static/js/modules/color-themes.js"></script>
+<!-- End Modules -->
+<!-- Google services -->
+<!---<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>--->
+
+<!-- end Google services -->
+<!-- Fancybox -->
+<script src="/static/js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/static/js/fancybox/jquery.mousewheel.pack.js"></script>
+<script src="/static/js/fancybox/jquery.fancybox.custom.js"></script>
+<!-- End Fancybox -->
+
+<script src="/static/js/cookie.js"></script>
